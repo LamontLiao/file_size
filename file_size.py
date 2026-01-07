@@ -417,7 +417,18 @@ def _use_ttk_theme(root: tk.Tk) -> None:
             break
         except tk.TclError:
             continue
-
+def run(folder: str, scan_depth: int, out_xlsx: str | None = None) -> int:
+    """
+    folder: 要扫描的目录
+    scan_depth: 扫描层级（0=不限递归，1=当前，2=下一层...）
+    out_xlsx: 输出excel路径（可选）
+    return: 0=成功，非0=失败
+    """
+    # TODO: 把你 main() 里面真正干活的逻辑搬到这里
+    # 举例（你按自己现有逻辑替换）：
+    # results = scan_folder(folder, scan_depth)
+    # export_excel(results, out_xlsx or default_path)
+    return 0
 
 def main() -> int:
     app = App()
